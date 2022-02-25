@@ -38,28 +38,27 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>Q1 : Agile vs DevOps</h2>
-                        <p class="lead">Following are the differences</p>
+                        <h2>Q1 : Containers vs VMs</h2>
+                        <p class="lead">Containers vs VMs differences are pasted below</p>
                         <ul>
-                            <li>The Agile involves continuous iteration of development and testing in the SDLC process.</li>
-                            <li>Both development and testing activities are concurrent, unlike the waterfall model.</li>
-                            <li>This software development method emphasizes on incremental, iterative, and evolutionary development.</li>
-                            <li>It breaks the product into small pieces and integrates them for final testing.</li>
-			    <li>It can be implemented in many ways, such as Kanban, XP, Scrum, etc.</li>
+                            <li>Hardware-level process isolation</li>
+                            <li>Each VM has a separate OS</li>
+                            <li>Boots in minutes</li>
+                            <li>VMs are of few GBs</li>
+			    <li>Ready-made VMs are difficult to find</li>
 			    <h2>VS</h2>
-                            <li>The DevOps is a combination of two words, one is software Development, and second is Operations.</li>
-                            <li> This allows a single team to handle the entire application lifecycle, from development to testing, deployment, and operations.</li>
-                            <li>DevOps helps you to reduce the disconnection between software developers,quality assurance(QA) engineers and system administrators.</li>
-                            <li>promotes collaboration between Dev and Ops team to deploy code to production faster in an automated and repeatable way.</li>
+                            <li>OS level process isolation</li>
+                            <li>Each container can share OS</li>
+                            <li>Boots in seconds<li>
+                            <li>Containers are lightweight (KBs/MBs)</li>
                         </ul>
-			<h2>Q2 : CI Definition</h2>
-                        <p class="lead">CI stands for continuous integration, a fundamental DevOps best practice where developers frequently merge code changes into a central repository where automated builds and tests run.</p>
-			<h2>Q3 : CI and CD Explanation</h2>
-                        <p class="lead">For CI Developers practicing continuous integration merge their changes back to the main branch as often as possible. The developer's changes are validated by creating a build and running automated tests against the build. By doing so, you avoid integration challenges that can happen when waiting for release day to merge changes into the release branch.</p>
-                        <h2>&</h2>
-			<p class="lead">Continuous delivery is an extension of continuous integration since it automatically deploys all code changes to a testing and/or production environment after the build stage.</p>
-                        <h2>Q4 : What are the Cloud Computing Benefits?</h2>
-                        <p class="lead">Following are the benefits</p>
+			<h2>Q2 : Explain Docker Architecture</h2>
+                        <p class="lead">Docker architecture. Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon.</p>
+			<h2>Q3 : Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2</h2>
+                        <p class="lead">docker container run -it -d --publish 9090:80 --name assignment-2 nginx</p>
+
+			<h2>Q4 : Write command to see logs of any container</h2>
+                        <p class="lead">docker container log assignment-2</p>
                         <ul>
                             <li>Cost Savings</li>
 			    <li>Security</li>
